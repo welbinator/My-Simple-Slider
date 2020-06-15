@@ -1,0 +1,32 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+.slide {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    opacity: 0;
+    transform: translateX(100px);
+    transition: all .5s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.next {
+    background: pink;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+}
